@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PIC 2026 | Paragon Innovation Challenge</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <body>
+  <script>
+    const picUser = sessionStorage.getItem("picUser");
+
+    if(!picUser){
+      window.location.href = "login.html";
+    }
+  </script>
+
+  <!-- isi website kamu lanjut di bawah -->
+
+  <div class="bg-ribbon bg-ribbon-left" aria-hidden="true"></div>
+  <div class="bg-ribbon bg-ribbon-right" aria-hidden="true"></div>
+
+  <nav class="mini-nav">
+    <a href="index.html" class="brand-logo">
+      <img src="Logo1.jpg" alt="Logo Paragon 1" />
+      <img src="Logo.jpg" alt="Logo Paragon 2" />
+    </a>
+
+    <div class="nav-menu">
+      <a href="#program">Program</a>
+      <button class="nav-btn" id="openInfo" type="button">
+        <i class="fa-solid fa-circle-info"></i>
+        Info
+      <button class="nav-btn logout-btn" id="logoutBtn" type="button">
+    <i class="fa-solid fa-right-from-bracket"></i>
+    Logout
+  </button>
+      </button>
+    </div>
+  </nav>
+
+  <!-- POPUP INFO -->
+  <div class="info-popup" id="infoPopup" hidden>
+    <div class="info-backdrop" data-close="true"></div>
+
+    <div class="info-popup-inner">
+      <button class="info-close" id="infoClose" type="button" aria-label="Tutup">
+        &times;
+      </button>
+
+      <div class="info-slider" id="infoSlider">
+        <article class="info-slide">
+          <img src="POPUP1.png" alt="Info PIC 2026 1" />
+        </article>
+
+        <article class="info-slide">
+          <img src="POPUP1.png" alt="Info PIC 2026 2" />
+        </article>
+
+        <article class="info-slide">
+          <img src="POPUP1.png" alt="Info PIC 2026 3" />
+        </article>
+      </div>
+
+      <div class="info-dots" id="infoDots"></div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero hero-home">
+      <div class="hero-glow"></div>
+
+      <div class="hero-inner">
+        <div class="hero-left">
+          <span class="hero-pill">
+            <i class="fa-solid fa-sparkles"></i>
+            WELCOME
+          </span>
+
+          <h1 class="hero-heading">
+            <span class="hero-highlight">2026</span> PARAGON<br />
+            INNOVATION<br />
+            CHALLENGE
+          </h1>
+
+          <p class="hero-subtitle">
+            Saatnya ide kamu naik panggung — dari gagasan jadi aksi, dari aksi jadi inovasi.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#program" class="btn-primary">
+              <i class="fa-solid fa-play"></i>
+              Explore Program
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-illustration">
+            <img src="MASKOD.png" alt="Maskot PIC 2026" class="hero-img-main" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+<!-- PIC 2025 STORY INTRO - ENERGIC VERSION -->
+<section class="pic-story-section" id="pic-story">
+  <div class="pic-story-card">
+
+    <div class="pic-story-orb orb-one"></div>
+    <div class="pic-story-orb orb-two"></div>
+
+    <div class="pic-story-content">
+      <span class="pic-story-badge">
+        <i class="fa-solid fa-bolt"></i>
+        JOURNEY PIC 2025
+      </span>
+
+      <h2>
+        Dari Ide Sederhana,<br />
+        Menjadi Dampak Nyata
+      </h2>
+
+      <p>
+        <strong>Paragon Innovation Challenge bukan hanya tentang kompetisi,</strong> tapi tentang sebuah perjalanan.
+        Perjalanan ketika ide-ide sederhana mulai berani muncul, dibagikan, lalu
+        dikembangkan menjadi solusi yang lebih berdampak.
+      </p>
+
+      <p>
+        Di setiap momennya, ada semangat para innovator untuk belajar,
+        berkolaborasi, dan mencoba hal baru. Dari diskusi kecil, presentasi,
+        hingga panggung apresiasi, Paragon Innovation Challenge menjadi ruang untuk melihat bagaimana
+        ide dapat tumbuh menjadi aksi nyata.
+      </p>
+
+      <div class="pic-story-highlight">
+        <i class="fa-solid fa-rocket"></i>
+        <span>
+          Inilah cerita perjalanan Paragon Innovation Challenge — tentang keberanian memulai,
+          semangat berinovasi, dan kontribusi untuk menciptakan perubahan yang lebih baik.
+        </span>
+      </div>
+
+      <a href="#review-photo" class="pic-story-btn">
+        <i class="fa-solid fa-images"></i>
+        Lihat Momen PIC 2025
+      </a>
+    </div>
+
+    <div class="pic-story-side">
+      <div class="pic-mini-card card-one">
+        <i class="fa-solid fa-lightbulb"></i>
+        <span>Idea</span>
+      </div>
+
+      <div class="pic-mini-card card-two">
+        <i class="fa-solid fa-users"></i>
+        <span>Collaboration</span>
+      </div>
+
+      <div class="pic-mini-card card-three">
+        <i class="fa-solid fa-trophy"></i>
+        <span>Appreciation</span>
+      </div>
+    </div>
+
+  </div>
+</section>  
+
+
+<!-- REVIEW PHOTO -->
+<section class="photo-review-section" id="review-photo">
+  <div class="photo-review-wrap">
+    <div class="photo-review-head">
+      <span class="photo-review-badge">DOKUMENTASI</span>
+      <h2>Keseruan PIC 2025</h2>
+      <p>Setiap moment menyimpan cerita, kolaborasi, dan langkah kecil menuju inovasi besar.</p>
+    </div>
+
+    <div class="photo-carousel">
+      <button class="photo-nav photo-prev" id="photoPrev" aria-label="Foto sebelumnya">
+        &#10094;
+      </button>
+
+      <div class="photo-track-wrap">
+        <div class="photo-track" id="photoTrack">
+          <!-- FOTO PIC 2025 -->
+          <div class="photo-card"><img src="1.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="2.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="3.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="4.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="5.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="6.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="7.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="8.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="9.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="10.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="11.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="12.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="13.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="14.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="15.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="16.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="17.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="18.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="19.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="20.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="21.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="22.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="23.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="24.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="25.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="26.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="27.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="28.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="29.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="30.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="31.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="32.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="33.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="34.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="35.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="36.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="37.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="38.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="39.png" alt="PIC 2025" /></div>
+          <div class="photo-card"><img src="40.png" alt="PIC 2025" /></div>
+        </div>
+      </div>
+
+      <button class="photo-nav photo-next" id="photoNext" aria-label="Foto berikutnya">
+        &#10095;
+      </button>
+    </div>
+  </div>
+</section>
+
+    <!-- PROGRAM -->
+    <section class="section" id="program">
+      <div class="section-head">
+        <span class="section-badge">
+          <i class="fa-solid fa-layer-group"></i>
+          PIC 2026
+        </span>
+        <h2>Program Journey</h2>
+        <p>Mulai perjalanan inovasimu melalui rangkaian program PIC 2026.</p>
+      </div>
+
+      <div class="program-grid">
+        <a class="program-card" href="5r.html">
+          <div class="program-top">
+            <span class="program-label">Program</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+
+<div class="program-image program-qit program-photo" style="background-image:url('BGCONTENT2.png');">
+  <span>QIT DAY</span>
+</div>
+
+          <div class="program-body">
+            <h3>QIT Day</h3>
+            <p>Awal perjalanan ide-ide keren menuju PIC 2026.</p>
+          </div>
+        </a>
+
+        <a class="program-card" href="Epic.html">
+          <div class="program-top">
+            <span class="program-label">Program</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+
+<div class="program-image program-pre program-photo" style="background-image:url('BGCONTENT.png');">
+  <span>PRE EVENT</span>
+</div>
+
+          <div class="program-body">
+            <h3>Pre Event</h3>
+            <p>Ruang eksplorasi, persiapan, dan update seru menuju PIC 2026.</p>
+          </div>
+        </a>
+
+        <a class="program-card" href="SS.html">
+          <div class="program-top">
+            <span class="program-label">Program</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+
+<div class="program-image program-main program-photo" style="background-image:url('BGCONTENT1.png');">
+  <span>MAIN EVENT</span>
+</div>
+
+          <div class="program-body">
+            <h3>Main Event</h3>
+            <p>Saatnya ide terbaik tampil di panggung PIC 2026.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <!-- CONTACT PERSON -->
+<section class="section compact-section" id="contact">
+  <div class="section-head">
+    <span class="section-badge">
+      <i class="fa-solid fa-headset"></i>
+      NEED HELP?
+    </span>
+    <h2>Contact Person</h2>
+    <p>Hubungi panitia PIC 2026 sesuai kebutuhan informasi kamu.</p>
+  </div>
+
+  <div class="contact-person-grid">
+
+    <!-- CONTACT 1 -->
+    <a
+      class="cp-card"
+      href="https://wa.me/6287814045175"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat WhatsApp Deden"
+    >
+      <div class="cp-photo-wrap">
+        <img src="DEDEN.png" alt="PIC EVENT" class="cp-photo" />
+      </div>
+
+      <h3 class="cp-name">DEDEN</h3>
+      <p class="cp-role">Event Coordinator</p>
+      <p class="cp-phone">087814045175</p>
+
+      <p class="cp-info">
+        Bertanggung jawab atas seluruh penyelenggaraan PIC 2026
+      </p>
+
+      <span class="cp-wa">
+        <i class="fa-brands fa-whatsapp"></i>
+        Chat WhatsApp
+      </span>
+    </a>
+
+    <!-- CONTACT 2 -->
+    <a
+      class="cp-card"
+      href="https://wa.me/6287814045008"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat WhatsApp MILA"
+    >
+      <div class="cp-photo-wrap">
+        <img src="MILA.png" alt="PIC EVENT" class="cp-photo" />
+      </div>
+
+      <h3 class="cp-name">MILA</h3>
+      <p class="cp-role">Participant Support 1</p>
+      <p class="cp-phone">087814045008</p>
+
+      <p class="cp-info">
+         Membantu validasi data peserta, perubahan anggota tim, registrasi, dan konfirmasi kehadiran PIC 2026
+      </p>
+
+      <span class="cp-wa">
+        <i class="fa-brands fa-whatsapp"></i>
+        Chat WhatsApp
+      </span>
+    </a>
+
+    <!-- CONTACT 3 -->
+    <a
+      class="cp-card"
+      href="https://wa.me/6287815825017"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat WhatsApp PIC Main Event"
+    >
+      <div class="cp-photo-wrap">
+        <img src="DENI.png" alt="PIC EVENT" class="cp-photo" />
+      </div>
+
+      <h3 class="cp-name">DENI</h3>
+      <p class="cp-role">Participant Support 2</p>
+      <p class="cp-phone">087815825017</p>
+
+      <p class="cp-info">
+        Membantu validasi data peserta, perubahan anggota tim, registrasi, dan konfirmasi kehadiran PIC 2026
+      </p>
+
+      <span class="cp-wa">
+        <i class="fa-brands fa-whatsapp"></i>
+        Chat WhatsApp
+      </span>
+    </a>
+
+  </div>
+</section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
